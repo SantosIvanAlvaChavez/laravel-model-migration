@@ -18,3 +18,15 @@
         </li>
         @endforeach
     </ul>
+
+    <section id="app">
+        <h2>Our Bikes App</h2>
+        <ul>
+            <li v-for="bike in bikes">
+                <h3>@{{ bike.modello }}</h3>
+                <div>@{{ bike.marca }}</div>
+                <div>@{{ bike.targa }}</div>
+                <div>@{{ bike.cavalli}}</div>
+            </li>
+        </ul>
+    </section>
